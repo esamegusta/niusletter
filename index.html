@@ -5,20 +5,19 @@
   <title>newsletter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-  body {
-    color: #2f3e2f;
-    background-color: #f7f6f3;
-  }
-</style>
-
-
+  <style>
+    body {
+      color: #2f3e2f;
+      background-color: #f7f6f3;
+    }
+  </style>
 </head>
+
 <body>
 
   <main style="max-width: 32em; margin: 4em auto; font-family: serif; line-height: 1.6;">
 
-                 <h1>niusletter ;; </h1>
+    <h1>niusletter ;; </h1>
 
     <p>
       cosas recientes e insistentes ; <br>
@@ -28,9 +27,12 @@
     <p>
       sitea treves, deja tu correo aquí:
     </p>
-<input type="hidden" name="_subject" value="Nueva suscripción niusletter">
 
-    <form action="https://formspree.io/f/maqoqllw" method="post" enctype="text/plain">
+    <form action="https://formspree.io/f/maqoqllw" method="POST">
+
+      <!-- campos ocultos VAN DENTRO del form -->
+      <input type="hidden" name="_subject" value="Nueva suscripción niusletter">
+
       <p>
         <input 
           type="email" 
@@ -40,37 +42,12 @@
           style="width: 100%; padding: 0.5em; font-size: 1em;"
         >
       </p>
+
       <p>
         <button 
-  type="submit" 
-  style="
-    padding: 0.4em 1em; 
-    font-size: 0.95em;
-    background-color: #44444424;
-    color: #2f3e2f;
-    border: 1px solid #2f3e2f;
-  "
->
-  suscribirme
-</button>
-
-      </p>
-    </form>
-
-    <p style="font-size: 0.85em; color: #666; margin-top: 3em;">
-      tu correo no se usa para nada más<br>
-    </p>
-
-  </main>
-<pre style="font-family: monospace; text-align: center; margin-top: 3em;">
-  c
-    e
-  l
- e
-  s
-    t
-      e
-</pre>
-
-</body>
-</html>
+          type="submit" 
+          style="
+            padding: 0.4em 1em; 
+            font-size: 0.95em;
+            background-color: #44444424;
+            color: #2f3e2f;
