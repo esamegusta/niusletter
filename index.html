@@ -1,53 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>newsletter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-    body {
-      color: #2f3e2f;
-      background-color: #f7f6f3;
-    }
-  </style>
-</head>
-
+<html>
 <body>
 
-  <main style="max-width: 32em; margin: 4em auto; font-family: serif; line-height: 1.6;">
+<form action="https://formspree.io/f/maqoqllw" method="POST">
+  <label>
+    Email:
+    <input type="email" name="email" required>
+  </label>
+  <button type="submit">Send</button>
+</form>
 
-    <h1>niusletter ;; </h1>
-
-    <p>
-      cosas recientes e insistentes ; <br>
-      niusletter semanal con pedazos de info que tickelean mi occipucio y mis falangetas
-    </p>
-
-    <p>
-      sitea treves, deja tu correo aquí:
-    </p>
-
-    <form action="https://formspree.io/f/maqoqllw" method="POST">
-
-      <!-- campos ocultos VAN DENTRO del form -->
-      <input type="hidden" name="_subject" value="Nueva suscripción niusletter">
-
-      <p>
-        <input 
-          type="email" 
-          name="email" 
-          placeholder="tu correo" 
-          required
-          style="width: 100%; padding: 0.5em; font-size: 1em;"
-        >
-      </p>
-
-      <p>
-        <button 
-          type="submit" 
-          style="
-            padding: 0.4em 1em; 
-            font-size: 0.95em;
-            background-color: #44444424;
-            color: #2f3e2f;
+</body>
+</html>
